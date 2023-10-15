@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="portfoliostyle.css">
+</head>
+<body>
+<div id="header">
+    <div class="container"> 
+           <nav>
+               <img src="wwi.png" class="logo">
+               <ul>
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+               </ul>
+           </nav>
+           <div class="header-text">
+                <p>Undergrad Telecom Engineer</p>
+                <h1>Hi, I'm<br><span> Warisha iqbal</span><br>from Pakistan</h1>
+
+           </div>
+    </div>
+</div> 
+<!------------about----------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img2.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Assalam-u-alikum! This is Warisha Iqbal and an undergraduate student of telecommunication engineering in Ned University (3rd year)
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span><br>Data Science Specialist</li>
+                        <li><span>HTML/CSS</span><br>Frontend Developer</li>
+                        <li><span>Canva</span><br>Beginners level</li>
+                        <li><span>Lightroom</span><br>Intermediate level</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Sept - Current</span><br>Internee at Oasis Infobytes</li>
+                        <li><span>2023 - Current</span><br>Content writer and SMM at KAS Design</li>
+                        <li><span>2022 - 2023</span><br>Teaching at IJK Coaching Centre</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - Current</span><br>BE in Telecom Engineering at NED University</li>
+                        <li><span>2019 - 2021</span><br>Intermediate in Computer Science From BAMM PECHS College</li>
+                        <li><span>2019</span><br>Matriculated From Adamjee Grammar School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------services-------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code" style="color: #fff"></i>
+                <h2>Data Science</h2>
+                <p>As a beginner-level data scientist with a focus on Python, I'm offering fundamental data analysis services. I have a foundational understanding of data manipulation and visualization using Python libraries like pandas and matplotlib. My services include basic data cleaning, exploring datasets to identify simple trends, and creating basic visualizations to help stakeholders grasp essential insights. </p>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" style="color: #fff"></i>
+                <h2>Web Design</h2>
+                <p>As a beginner-level web designer, I offer creative and affordable web design services for individuals, small businesses, and startups.  My services include designing responsive layouts, selecting complementary color schemes, and creating a cohesive visual identity for your online presence. Whether you need a simple portfolio site, a blog, or a basic e-commerce website.</p>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" style="color: #fff"></i>
+                <h2>Content Writing</h2>
+                <p>As a beginner-level content writer, I provide creative and engaging written content tailored to your specific needs. Whether it's blog posts, articles, website copy, or social media content, I'm here to help you communicate your ideas effectively. My services include conducting research, crafting compelling narratives, and ensuring that every piece of content is well-structured, error-free, and designed to captivate your audience.</p>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+           
+        </div>
+    </div>
+</div>
+<!---------=portfolio---------->
+<div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.png">
+                    <div class="layer">
+                        <h3>Landing page</h3>
+                        <p>Warisha's Digital Learning Hub, This is my first project in the field of  web development and designing which is a landing page that i created</p>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.png">
+                    <div class="layer">
+                       <h3>Temperature Converter</h3>
+                       <p>Temperature Converter, This is my Second project that i created</p>
+                       
+                    </div>
+                </div>
+                
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+</div>
+<!----------Contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>warishaiqbal020@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                
+                <a href="Warisha's Resume.pdf" download class="btn btn2">Download CV</a>
+                    
+                
+            </div>
+            <div class="contact-right">
+                <form >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &#169; Warisha. </p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+</script>
+
+</body>
+</html>
